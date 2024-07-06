@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
 }
+header{
+    width: 90vw;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    padding-left: 50px;
+}
 .contact{
     display: flex;
     flex-direction: row;
     height:20px;
-    width: 95vw;
-    margin: auto;
+    width: 90vw;
+    margin: 5px auto;
     justify-content: space-between;
     align-items: center;
     color: rgb(77, 74, 107);
@@ -37,11 +44,12 @@
 .line{
     background-color:grey;
     height: 1px;
-    width: 95vw;
-    margin: auto;
+    width: 90vw;
+    margin: 5px auto;
 }
 .navbar{
-    width: 95vw;
+    background-color: white;
+    width: 90vw;
     margin: 10px auto;
     height: 50px;
     display: flex;
@@ -51,8 +59,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
     font-weight: 700;
-    color: rgb(52, 47, 105);
-    position: sticky;
+    
+    
 }
 .navbar img{
     height: 40px;
@@ -62,17 +70,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
+    color:#004f63;
+
 }
 .navbar :nth-child(1) div{
     margin: 20px;
     padding: 2px;
+    
+    color: #004f63;
+    
 }
 .navbar :nth-child(2){
     align-items: center;
     justify-content: center;
+    color: white;
 }
 .btn{
-    text-decoration: none;
+    /* text-decoration: none; */
     background-color: orangered;
     color: white;
     padding: 10px 22px;
@@ -81,52 +96,96 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
 }
+#app-btn{
+    color: white;
+}
 .main-container{
+    position: absolute;
+    top: 100px;
+    z-index: -1;
     display: flex;
     flex-direction: column;
     background-image: url(assets/asset\ 21.jpeg);
-    height: 90vh;
+    width: 90vw;
     justify-content: center;
-    background-size: 80vw;
+    background-size: max(80vw,1000px);
     background-repeat: no-repeat;
     /* background-color: red; */
-    background-position: right;
+    background-position:top right;
 
 
 }
 .main-box{
+    display: flex;
+    flex-direction: column;
     position: relative;
-    left: 20vw;
+    left: 10vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #004f63;
     padding: 0;
     margin: 0;
+    margin-top: 30px;
+    /* align-items: center; */
+    justify-content: center;
+    /* background-color: red; */
 }
 .main-box >:nth-child(1){
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
+    margin-left: 20px;
 
 }
 .main-box >:nth-child(2){
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
     margin: 0;
     padding: 0;
+    margin-left: 20px;
 
 }
 .main-box >:nth-child(3){
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 300;
     margin: 0;
     padding: 0;
+    margin-left: 20px;
+    
 
 }
 .main-box >:nth-child(4){
-    margin: 8px auto;
+    margin: 8px;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
 
 }
 
 .main-box button{
     font-size: 15px;
     margin: 10px auto;
+    margin-left: 20px;
+}
+.form{
+    background-color: #00a9d3;
+    width:70vw;
+    height: 30rem;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+.form :nth-child(1){
+    width: 70%;
+    /* background-color: red; */
+}
+.form :nth-child(2){
+    height: 100%;
+    width: 2px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.form :nth-child(3){
+    display: flex;
+    flex-direction: column;
 }
