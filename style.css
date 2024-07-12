@@ -126,7 +126,7 @@ header{
     margin: 0;
     margin-top: 30px;
     /* align-items: center; */
-    justify-content: center;
+    justify-content: space-evenly;
     /* background-color: red; */
 }
 .main-box >:nth-child(1){
@@ -167,6 +167,7 @@ header{
 }
 .form{
     background-color: #00a9d3;
+    color: white;
     width:70vw;
     height: 30rem;
     margin: 20px 40px;
@@ -174,18 +175,69 @@ header{
     flex-direction: row;
     border-radius: 5px;
 }
-.form :nth-child(1){
+.form >:nth-child(1){
     width: 70%;
     /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 14px;
 }
-.form :nth-child(2){
+.form >:nth-child(2){
     height: 100%;
     width: 2px;
     background-color: white;
     display: flex;
     flex-direction: column;
 }
-.form :nth-child(3){
+.form >:nth-child(3){
     display: flex;
     flex-direction: column;
+}
+.basic-detail{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    /* background-color: red; */
+    
+}
+.basic-detail > div{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.basic-detail :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items:self-start;
+}
+.basic-detail :nth-child(4){
+    margin-left: 0px;
+    
+    
+}
+.basic-detail :nth-child(4) button{
+    border-radius: 5px;
+    font-size: 12px
+}
+.inp{
+    height: 2rem;
+    width: 42%;
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px 0px ;
+    border: none;
+    border-radius: 5px;
+}
+.msg{
+    width: 95%;
+    height: 10rem;
+    padding: 5px;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
 }
